@@ -3,11 +3,18 @@ import React from 'react';
 import Menu from './Menu';
 import SearchBar from './SearchBar';
 import NavIcons from './NavIcons';
+import { Roboto } from 'next/font/google';
+
+const roboto = Roboto({
+  weight: ['400', '500', '600', '800', '900'],
+  subsets: ["latin"],
+});
+
 
 
 const Navbar = () => {
     return (
-        <div className='h-20 px-4 lg:px-16 md:px-8 xl:px-32 2xl:px-64 relative'>
+        <div className={`h-20 px-4 lg:px-16 md:px-8 xl:px-32 2xl:px-64 relative ${roboto.className}`}>
             {/* mobile */}
             <div className='h-full flex items-center justify-between md:hidden'>
                 <Link href='/'>

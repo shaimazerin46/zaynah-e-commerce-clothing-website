@@ -1,3 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.btn_style{
+    background-color: #F16767;
+    color: white;
+}
+
