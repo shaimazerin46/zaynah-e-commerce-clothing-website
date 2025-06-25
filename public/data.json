@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Casual Top and Skirt",
+    "price": 5050,
+    "description": "A stylish and comfortable casual top and skirt set, perfect for warm summer days.",
+    "category": "Women",
+    "image": "https://i.ibb.co/CKbbQZYm/25-Basic-Outfit-Ideas-for-the-Summer-of-2025-Casual-Classy-Chic-Styles-for-Women-and-Teens.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Slim Fit Cotton Shirt",
+    "price": 6600,
+    "description": "Premium quality slim fit cotton shirt for men, ideal for both formal and casual wear.",
+    "category": "Men",
+    "image": "https://i.ibb.co/JjgZVzhd/Old-Money-Aesthetic-Outfits-for-Men-Men-Style-Erkek-sokak-giyimi-Erkek-moda-tarzlar.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Women Cord Set",
+    "price": 4350,
+    "description": "Trendy and breathable cord set for women, perfect for daily wear and casual outings.",
+    "category": "Unisex",
+    "image": "https://i.ibb.co/RGsnXTFs/download-22.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Comfy Cotton Jacket",
+    "price": 2200,
+    "description": "Soft and comfortable cotton jacket for kids, great for cool days and layering.",
+    "category": "Kids",
+    "image": "https://i.ibb.co/ZRVGbJvV/Discover-the-Top-18-Men-s-Casual-Fall-Outfits-for-2024-Street-Ready-Styles-Timeless-Autumn-Trends.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Summer White Top and Pant",
+    "price": 3850,
+    "description": "A lightweight and breezy white top and pant set, ideal for summer travel and daily comfort.",
+    "category": "Activewear",
+    "image": "https://i.ibb.co/tT98hH9F/Cord-Set-for-Women-Beach-Wear-Long-Trip-Wear.jpg"
+  }
+]
