@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Men's Denim Jacket",
+    "category": "Men",
+    "subcategory": "Winter",
+    "price": 4200,
+    "description": "Stylish winter denim jacket with sherpa lining for extra warmth.",
+    "img": "https://i.ibb.co/tMrH57ht/How-to-Dress-Well-Men-47-Simple-Fashion-Tips-For-Guys-Sterling-Personal-Styling-Online-Personal-Styl.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Women's Floral Maxi Dress",
+    "category": "Women",
+    "subcategory": "Spring",
+    "price": 3600,
+    "description": "Flowy maxi dress with floral patterns, perfect for spring outings.",
+    "img": "https://i.ibb.co/FkhvF2f7/Linen-Maxi-Dress-Bell-Sleeve-Boat-Neck-Floral-Vintage-Yellow.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Basic Cotton T-shirt",
+    "category": "T-shirt",
+    "subcategory": "Summer",
+    "price": 900,
+    "description": "Comfortable unisex cotton T-shirt available in multiple colors.",
+    "img": "https://i.ibb.co/XrB9r6JH/templatedesign.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Knitted Winter Scarf",
+    "category": "Accessories",
+    "subcategory": "Winter",
+    "price": 750,
+    "description": "Warm knitted scarf to keep you cozy during cold days.",
+    "img": "https://i.ibb.co/rf56Xvtn/1pc-Solid-Color-Scarf-Winter-Warm-Neck-Thickened-Wool-Knitted-Thick-Fringed-Shawl-Winter-Scarf.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Women's Summer Cord Set",
+    "category": "Featured",
+    "subcategory": "Summer",
+    "price": 3850,
+    "description": "Trendy and breathable cord set perfect for beachwear.",
+    "img": "https://i.ibb.co/qMtsMf4C/Solid-Color-Corded-Short-Sleeve-Top-and-Casual-Pants-Set.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Graphic Tee",
+    "category": "T-shirt",
+    "subcategory": "Spring",
+    "price": 1200,
+    "description": "Unisex graphic printed tee, casual and expressive.",
+    "img": "https://i.ibb.co/8LKM0Z64/Daisy-Printed-Round-Neck-Short-Sleeve-Blouse.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Classic Leather Belt",
+    "category": "Accessories",
+    "subcategory": "All",
+    "price": 1450,
+    "description": "Genuine leather belt with metal buckle, great for formal wear.",
+    "img": "https://i.ibb.co/SX5rx3g1/Basic-Things-Buckle-Belt-80cm-31-5-in-Black.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Men's Chino Shorts",
+    "category": "Men",
+    "subcategory": "Summer",
+    "price": 2100,
+    "description": "Breathable and lightweight chino shorts for everyday use.",
+    "img": "https://i.ibb.co/v64hFksX/Everyday-Chino-Short-Olive.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Women’s Spring Blazer",
+    "category": "Women",
+    "subcategory": "Spring",
+    "price": 4600,
+    "description": "Lightweight blazer perfect for layering in springtime.",
+    "img": "https://i.ibb.co/sp5rLKST/IDEALSANXUN-Cotton-Linen-Blazer-for-Womens-Long-Sleeve-Loose-Casual-Blazer-Jackets.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Unisex Hoodie",
+    "category": "Featured",
+    "subcategory": "Winter",
+    "price": 2850,
+    "description": "Warm and comfy hoodie for all genders and seasons.",
+    "img": "https://i.ibb.co/fWkhJ0K/Essential-Heavyweight-Oversized-Hoodie-Mid-Green-S.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Cotton Beanie",
+    "category": "Accessories",
+    "subcategory": "Winter",
+    "price": 600,
+    "description": "Soft knit cotton beanie to keep your head warm.",
+    "img": "https://i.ibb.co/yFLGChGG/FURTALK-Womens-Winter-Knit-Slouchy-Beanie-Hat-Warm-Skull-Ski-Cap-Hats-for-Women.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Men’s Long Sleeve Polo",
+    "category": "Men",
+    "subcategory": "Spring",
+    "price": 2700,
+    "description": "Smart casual polo with long sleeves for cooler days.",
+    "img": "https://i.ibb.co/WvTFM43s/BESPARED-Men-s-Upcycled-Cashmere-Knitwear-Moda-Uomo-Inverno.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Sleeveless Summer Top",
+    "category": "Women",
+    "subcategory": "Summer",
+    "price": 1550,
+    "description": "Cool and breathable sleeveless top for sunny days.",
+    "img": "https://i.ibb.co/Z6WRmQCw/Dokotoo-Womens-Casual-V-Neck-Button-Down-Shirts-Summer-Striped-Ruffle-Cap-Sleeve-Side-Slit-Work-Tops.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Men's Casual Blazer",
+    "category": "Men",
+    "subcategory": "Spring",
+    "price": 5100,
+    "description": "Stylish casual blazer ideal for layering in spring.",
+    "img": "https://i.ibb.co/Tx07dWKJ/Men-s-Blazer-Jacket-Sport-Coat-Dark-Grey-Formal-Wedding-Guest-Blazer-Daily-Fashion-Casual-All-Season.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Women's Shawl",
+    "category": "Accessories",
+    "subcategory": "Winter",
+    "price": 1100,
+    "description": "Elegant woolen shawl to complement your winter outfit.",
+    "img": "https://i.ibb.co/4n6YqCtv/Buy-Best-Woolen-Shawl-Online-From-Ahujasons.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Striped T-shirt",
+    "category": "T-shirt",
+    "subcategory": "Summer",
+    "price": 950,
+    "description": "Casual striped tee made with breathable fabric.",
+    "img": "https://i.ibb.co/BVLLq7q1/Striped-Contrast-Collar-Half-Zip-Tee.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Women’s Cotton Kurti",
+    "category": "Women",
+    "subcategory": "Spring",
+    "price": 2300,
+    "description": "Elegant and soft cotton kurti for semi-formal events.",
+    "img": "https://i.ibb.co/Zp0fSPg8/Kurtas.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Men’s Jogger Pants",
+    "category": "Featured",
+    "subcategory": "Winter",
+    "price": 3200,
+    "description": "Cozy joggers perfect for casual winter days.",
+    "img": "https://i.ibb.co/zVq2Xf2L/Guys-Flap-Pocket-Side-Drawstring-Waist-Cargo-Pants.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Silk Dupatta",
+    "category": "Accessories",
+    "subcategory": "Spring",
+    "price": 1650,
+    "description": "Silky, lightweight dupatta to match your traditional wear.",
+    "img": "https://i.ibb.co/svQHtP9q/Dupattas-That-Will-Make-For-A-Timeless-Insert-Into-Your-Wardrobe.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Oversized Sweatshirt",
+    "category": "T-shirt",
+    "subcategory": "Winter",
+    "price": 2500,
+    "description": "Loose fit, cozy sweatshirt for winter lounging.",
+    "img": "https://i.ibb.co/0pL1PtBb/World-Class-Pigment-Dyed-Sweatshirt-4-Colors.jpg"
+  }
+]
