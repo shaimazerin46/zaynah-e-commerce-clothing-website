@@ -1,3 +1,4 @@
+import { featureApi } from "@/services/feature";
 import { slidersApi } from "@/services/slider";
 import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from '@reduxjs/toolkit/query'
@@ -5,11 +6,14 @@ import { setupListeners } from '@reduxjs/toolkit/query'
 export const store = configureStore({
     reducer: {
         [slidersApi.reducerPath] : slidersApi.reducer,
+        [featureApi.reducerPath] : featureApi.reducer,
     },
 
     // for caching, invalidation, polling
      middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(slidersApi.middleware),
+    getDefaultMiddleware()
+     .concat(slidersApi.middleware)
+     .concat(featureApi.middleware)
 
 });
 

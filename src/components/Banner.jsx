@@ -26,7 +26,7 @@ const Banner =  () => {
   pauseOnHover: true,
 };
     return (
-      <Slider {...settings} className="md:h-[500px] bg-[#fffceb] p-3 md:p-0 overflow-x-hidden overflow-y-hidden">
+      <Slider {...settings} className="md:h-[500px] bg-[#fffceb] px-3 md:p-0 overflow-x-hidden overflow-y-hidden">
   {data?.map((item) => (
     <div key={item._id} className=" h-full md:px-6"> {/* Ensure full width & some padding */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 grid-cols-1 items-center h-full gap-4">
@@ -35,7 +35,7 @@ const Banner =  () => {
           <div className="space-y-5 md:w-[600px]">
             <h3 className="md:text-xl text-sm">{item.title}</h3>
             <p className="md:text-3xl text-xl tracking-wide">{item.description}</p>
-            <Button className="bg-black text-white">Shop now</Button>
+            <Button className="lite_orange text-white">Shop now</Button>
           </div>
         </div>
 
