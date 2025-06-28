@@ -2,9 +2,12 @@
 
 import { useGetProductsQuery } from "@/services/product";
 import ProductsList from "./ProductsList";
+import { useSelector } from "react-redux";
 
 const FetchAllProductList = () => {
-    const {data, isLoading, isError, error} = useGetProductsQuery();
+    const {category} = useSelector(state=>state.filters)
+    
+    const {data, isLoading, isError, error} = useGetProductsQuery(category);
       if(isLoading){
         return <p>Loading...</p>
     }
