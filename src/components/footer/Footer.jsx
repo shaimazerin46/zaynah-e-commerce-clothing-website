@@ -11,7 +11,7 @@ import Image from 'next/image';
 const Footer = () => {
     const date = new Date()
     return (
-        <div className='bg-[#f2f4f5] py-5 mt-10'>
+        <div className='bg-[#f2f4f5] py-5 mt-10 px-3 lg:px-0'>
             <div className='max-w-6xl mx-auto space-y-3'>
                 <div className='grid lg:grid-cols-7 gap-10'>
                     <div className='col-span-2'>
@@ -88,7 +88,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='flex justify-between text-xs'>
+                <div className='flex justify-between text-xs flex-col md:flex-row gap-3'>
                     <p >@ {date.getFullYear()} Zayanah shop </p>
                     <p>Language <span className='font-bold mx-3'>Bangladesh | English </span> Currency <span className='font-bold mx-3'>BDT</span></p>
                 </div>

@@ -9,12 +9,12 @@ const SearchBar = () => {
         const form = e.target;
         const name = form.name.value;
        if(name){
-        router.push(`/list?name=${name}`)
+        router.push(`/allProducts?name=${name}`)
        }
     }
     return (
         <div>
-            <form onSubmit={handleSearch} className="flex justify-between gap-4 bg-gray-100 p-2 flex-1 rounded-md w-[400px]">
+            <form onSubmit={handleSearch} className="flex justify-between gap-4 bg-gray-100 p-2 flex-1 rounded-md lg:w-[400px]">
                 <input name="name" type="text" placeholder="Search" className="bg-transparent focus:outline-0"/>
                 <button className="cursor-pointer text-[16px]">
                     <CiSearch />

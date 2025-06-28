@@ -26,7 +26,7 @@ const Navbar = () => {
             {/* desktop */}
             <div className='hidden md:flex items-center justify-between gap-8 h-full'>
                 {/* left side */}
-                <div className=' w-1/3'>
+                <div className='  flex gap-5'>
                      <Link href='/' >
                      <div className='flex items-center gap-2'>
                          <img src='/bow.png' alt="" className='w-10 flex items-center'/>
@@ -34,10 +34,18 @@ const Navbar = () => {
                      </div>
                    
                 </Link>
+                <ul className='lg:flex gap-3 items-center text-sm md:hidden'>
+                    <li><Link href='/'>
+                    Home
+                    </Link></li>
+                     <li><Link href='/allProducts'>
+                    Shop
+                    </Link></li>
+                </ul>
                 </div>
 
                 {/* right side */}
-                <div className='w-2/3 flex justify-between items-center gap-8'>
+                <div className='flex justify-between items-center gap-8'>
                     <SearchBar></SearchBar>
                     <NavIcons></NavIcons>
                 </div>

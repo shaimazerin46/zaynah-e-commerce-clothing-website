@@ -32,9 +32,9 @@ const Banner =  () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 grid-cols-1 items-center h-full gap-4">
         {/* Text container */}
         <div>
-          <div className="space-y-5 md:w-[600px]">
-            <h3 className="md:text-xl text-sm">{item.title}</h3>
-            <p className="md:text-3xl text-xl tracking-wide">{item.description}</p>
+          <div className="space-y-5 lg:w-[600px]">
+            <h3 className="lg:text-xl text-sm">{item.title}</h3>
+            <p className="lg:text-3xl text-xl tracking-wide">{item.description}</p>
             <Button className="lite_orange text-white">Shop now</Button>
           </div>
         </div>
