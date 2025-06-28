@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const FetchCategoryName = () => {
-     const {data, isLoading, isError, error} = useGetProductsQuery();
+     const {data, isLoading, isError, error} = useGetProductsQuery({});
      const uniqueCategories = Array.from(
     new Map(data?.map((item) => [item.category, item])).values()
   );

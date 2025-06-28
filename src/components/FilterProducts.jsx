@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/select"
 import { Input } from "./ui/input";
 import { useDispatch } from "react-redux";
-import { setCategory } from "@/app/features/filterState/filterSlice";
+import { setCategory, setSortBy } from "@/app/features/filterState/filterSlice";
 
 const FilterProducts = () => {
     const dispatch = useDispatch()
@@ -33,14 +33,14 @@ const FilterProducts = () => {
             </Select>
 
             {/* sort by */}
-              <Select>
+              <Select onValueChange={(value)=>dispatch(setSortBy(value))}>
                 <SelectTrigger className="md:w-[180px] focus:!ring-0 bg-gray-200 border-0 rounded-3xl text-sm text-gray-600">
                     <SelectValue placeholder="Sort By" className=''/>
                 </SelectTrigger>
                 <SelectContent side='bottom' className='bg-black text-white border-0'>
                     <SelectGroup>
-                        <SelectItem value="grapes" className='hover:bg-[#FCB454]'>Low to high</SelectItem>
-                        <SelectItem value="pineapple" className='hover:bg-[#FCB454]'>High to low</SelectItem>
+                        <SelectItem value="lowToHigh" className='hover:bg-[#FCB454]'>Low to high</SelectItem>
+                        <SelectItem value="highToLow" className='hover:bg-[#FCB454]'>High to low</SelectItem>
                     </SelectGroup>
                 </SelectContent>
             </Select>

@@ -73,17 +73,29 @@ const Footer = () => {
                             <li>Be the first to get latest news about treds, promotions and much more</li>
                             <li>
                                 <div className="flex w-full max-w-sm items-center gap-0">
-                                    <Input type="email" placeholder="Email" className='rounded-r-none border-0 bg-white  focus:!ring-0'/>
-                                    <Button type="submit"  className='rounded-l-none text-white bg-[#F16767]'>
+                                    <Input type="email" placeholder="Email" className='rounded-r-none border-0 bg-white  focus:!ring-0' />
+                                    <Button type="submit" className='rounded-l-none text-white bg-[#F16767]'>
                                         Subscribe
                                     </Button>
                                 </div>
                             </li>
                             <li className='font-bold'>Secure Payments</li>
                             <li className='flex gap-5'>
-                                <Image src='/paypal.png' height={64} width={64} alt='paypal'/>
-                                <Image  src='/mastercard.png' height={32} width={32} alt='mastercard' className=''></Image>
-                                <Image src='/visa.png' height={32} width={32} alt='visa'></Image>
+                                <Image src='/paypal.png' height={64} width={64} alt='paypal' />
+                                <Image
+                                    src='/mastercard.png'
+                                    height={32}
+                                    width={32}
+                                    alt='mastercard'
+                                    style={{ height: "auto", width: "32px" }}
+                                />
+                                <Image
+                                    src='/visa.png'
+                                    height={32}
+                                    width={32}
+                                    alt='visa'
+                                    style={{ height: "auto", width: "32px" }}
+                                />
                             </li>
                         </ul>
                     </div>

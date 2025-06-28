@@ -1,13 +1,11 @@
-// "use client";
 import Heading from '@/components/Heading/Heading';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-// import React, { useState } from 'react';
 import FetchAllProductList from '@/components/FetchAllProductList';
 import FilterProducts from '@/components/FilterProducts';
 
 const allProductsPage = () => {
-    // const [category, setCategory] = useState(null)
+  
     return (
         <div className='max-w-6xl mx-auto'>
 

@@ -10,9 +10,8 @@ import Image from "next/image";
 
 
 const Banner =  () => {
-    // const data = await fetch('')
-    const {data,isLoading, isSuccess} = useGetSlidersQuery();
-    console.log(data)
+   
+    const {data} = useGetSlidersQuery();
 
    const settings = {
   dots: false,
