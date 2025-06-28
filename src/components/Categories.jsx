@@ -12,7 +12,7 @@ const Categories = () => {
   );
     
     return (
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-3 md:px-0">
             <Heading text={"Categories"}></Heading>
             <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5">
                 {

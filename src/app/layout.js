@@ -2,6 +2,7 @@ import { Poppins} from 'next/font/google'
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import ReduxProvider from '@/providers/ReduxProvider';
+import Footer from '@/components/footer/Footer';
 
 
 const poppins = Poppins({
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar></Navbar>
         {children}
+        <Footer></Footer>
       </body>
      </ReduxProvider>
     </html>
