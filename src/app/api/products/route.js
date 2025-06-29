@@ -1,26 +1,18 @@
 import dbConnect, { collectionName } from "@/lib/dbConnect";
 
 export async function GET(req){
-
-  // req.url take the requested url like http://localhost:3000/api/products?category=Accessories&sort=lowToHigh
-  
+   
+  const url = new URL(req.url); // req.url take the requested url like http://localhost:3000/api/products?category=Accessories&sort=lowToHigh
   // new URL() parse the requested url in different necessary part like URL {
  // href: 'http://localhost:3000/api/products?category=Women&sort=lowToHigh',
-  //origin: 'http://localhost:3000',
-  //protocol: 'http:',
-  //username: '',
-  //password: '',
- // host: 'localhost:3000',
   //hostname: 'localhost',
   //port: '3000',
   //pathname: '/api/products',
   //search: '?category=Women&sort=lowToHigh',
   //searchParams: URLSearchParams { 'category' => 'Women', 'sort' => 'lowToHigh' },
-  //hash: ''
 //}
-   
-  const url = new URL(req.url);
-  console.log("REQ URL",url)
+
+// searchParams A property of the URL object that provides read-only access to query parameters.
   const rawCategory = url.searchParams.get("category");
   const sort = url.searchParams.get('sort');
 

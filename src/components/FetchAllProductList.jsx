@@ -2,12 +2,17 @@
 
 import { useGetProductsQuery } from "@/services/product";
 import ProductsList from "./ProductsList";
-import { useSelector } from "react-redux";
+import { useSearchParams } from "next/navigation";
+
 
 const FetchAllProductList = () => {
-    const {category, sortBy} = useSelector(state=>state.filters);
+    const searchParams = useSearchParams(); //useSearchParams() is a Client Component hook that lets you read the current URL's query string.
+   
+    const category = searchParams.get('category')
+    const sort = searchParams.get('sort')
+   
     
-    const {data, isLoading, isError, error} = useGetProductsQuery({category, sort:sortBy});
+    const {data, isLoading, isError, error} = useGetProductsQuery({category, sort});
       if(isLoading){
         return <p>Loading...</p>
     }

@@ -20,7 +20,7 @@ const FetchCategoryName = () => {
        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5">
                 {
                     uniqueCategories?.map(item=>(
-                        <Link href='/' key={item._id}>
+                        <Link href={`allProducts?category=${item.category}`} key={item._id}>
                             <div className="space-y-3">
                                  <div className="overflow-hidden">
                                     <Image src={item?.img} alt={item.title} height={300} width={400} className="h-[300px] md:w-[400px] w-full object-cover transition-transform duration-300 hover:scale-110"></Image>

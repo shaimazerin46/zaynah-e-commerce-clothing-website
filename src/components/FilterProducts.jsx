@@ -8,15 +8,40 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import { Input } from "./ui/input";
-import { useDispatch } from "react-redux";
-import { setCategory, setSortBy } from "@/app/features/filterState/filterSlice";
+import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+
 
 const FilterProducts = () => {
-    const dispatch = useDispatch()
+    const [category,setCategory] = useState(null);
+    const [sort,setSort] = useState(null);
+    const router = useRouter();
+    const pathname = usePathname();
+     
+   useEffect(()=>{
+    const params = new URLSearchParams(); // 1. URLSearchParams() is javascript object that allow to work with url query strings which are placed after ?
+
+    // 2. Add category to params if it exists
+    if(category) params.set('category', category);
+
+    // 3. Add sort to params if it exists
+    if(sort) params.set('sort', sort);
+
+    // 4. Check if we have any filters to apply
+    if(category || sort){
+        router.push(`${pathname}?${params.toString()}`)
+    }
+    // 6. If no filters, use clean URL
+    else{
+        router.push(pathname)
+    }
+    
+   },[category,sort]) // 7. Dependency array - effect runs when these change
+  
     return (
         <div className="mt-10 flex flex-wrap gap-5 md:w-[700px] justify-between mx-auto">
             {/* category */}
-            <Select onValueChange={(value)=>dispatch(setCategory(value))}>
+            <Select onValueChange={(value)=>setCategory(value)}>
                 <SelectTrigger className="md:w-[180px] focus:!ring-0 bg-gray-200 border-0 rounded-3xl text-sm text-gray-600">
                     <SelectValue placeholder="Category" className=''/>
                 </SelectTrigger>
@@ -33,7 +58,7 @@ const FilterProducts = () => {
             </Select>
 
             {/* sort by */}
-              <Select onValueChange={(value)=>dispatch(setSortBy(value))}>
+              <Select onValueChange={(value)=>setSort(value)}>
                 <SelectTrigger className="md:w-[180px] focus:!ring-0 bg-gray-200 border-0 rounded-3xl text-sm text-gray-600">
                     <SelectValue placeholder="Sort By" className=''/>
                 </SelectTrigger>
