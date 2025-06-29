@@ -10,9 +10,11 @@ const FetchAllProductList = () => {
    
     const category = searchParams.get('category')
     const sort = searchParams.get('sort')
+    const min = searchParams.get('min')
+    const max = searchParams.get('max')
    
     
-    const {data, isLoading, isError, error} = useGetProductsQuery({category, sort});
+    const {data, isLoading, isError, error} = useGetProductsQuery({category, sort, min, max});
       if(isLoading){
         return <p>Loading...</p>
     }

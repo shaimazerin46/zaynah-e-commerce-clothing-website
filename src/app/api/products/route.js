@@ -15,15 +15,29 @@ export async function GET(req){
 // searchParams A property of the URL object that provides read-only access to query parameters.
   const rawCategory = url.searchParams.get("category");
   const sort = url.searchParams.get('sort');
+  const minPrice = url.searchParams.get("min");
+  const maxPrice = url.searchParams.get('max');
 
   // If category is null, undefined, or 'null' string, treat as no filter
   const category = rawCategory && rawCategory !== "null" ? rawCategory : null;
+  const min = minPrice && minPrice !== "null" ? minPrice : null;
+  const max = maxPrice && maxPrice !== "null" ? maxPrice : null;
   
   let filter = {};
   let sortOption = {};
 
  if(category){
   filter.category = category
+ }
+ if(min || max){
+  filter.price= {};
+  if(min){
+    filter.price.$gte = Number(min)
+  }
+  if(max){
+    filter.price.$lte = Number(max)
+  }
+
  }
  if(sort==='lowToHigh'){
     sortOption.price = 1;

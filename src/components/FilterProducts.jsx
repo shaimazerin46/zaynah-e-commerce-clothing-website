@@ -15,6 +15,8 @@ import { usePathname, useRouter } from "next/navigation";
 const FilterProducts = () => {
     const [category,setCategory] = useState(null);
     const [sort,setSort] = useState(null);
+    const [minPrice,setMinPrice] = useState();
+    const [maxPrice, setMaxPrice] = useState();
     const router = useRouter();
     const pathname = usePathname();
      
@@ -26,9 +28,11 @@ const FilterProducts = () => {
 
     // 3. Add sort to params if it exists
     if(sort) params.set('sort', sort);
+    if(maxPrice) params.set('max', maxPrice);
+    if(minPrice) params.set('min', minPrice);
 
     // 4. Check if we have any filters to apply
-    if(category || sort){
+    if(category || sort || maxPrice || minPrice){
         router.push(`${pathname}?${params.toString()}`)
     }
     // 6. If no filters, use clean URL
@@ -36,7 +40,7 @@ const FilterProducts = () => {
         router.push(pathname)
     }
     
-   },[category,sort]) // 7. Dependency array - effect runs when these change
+   },[category,sort,maxPrice,minPrice]) // 7. Dependency array - effect runs when these change
   
     return (
         <div className="mt-10 flex flex-wrap gap-5 md:w-[700px] justify-between mx-auto">
@@ -71,8 +75,8 @@ const FilterProducts = () => {
             </Select>
 
              {/* price */}
-            <Input placeholder='Min' type='text' className='w-30 border-gray-500 rounded-3xl focus:!ring-0'></Input>
-            <Input placeholder='Max' type='text' className='w-30 border-gray-500 rounded-3xl focus:!ring-0'></Input>
+            <Input onChange={(e)=>setMinPrice(e.target.value)} placeholder='Min' type='text' className='w-30 border-gray-500 rounded-3xl focus:!ring-0'></Input>
+            <Input  onChange={(e)=>setMaxPrice(e.target.value)} placeholder='Max' type='text' className='w-30 border-gray-500 rounded-3xl focus:!ring-0'></Input>
 
         </div>
     );

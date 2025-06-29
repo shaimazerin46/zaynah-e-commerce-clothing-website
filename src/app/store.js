@@ -3,11 +3,11 @@ import { productApi } from "@/services/product";
 import { slidersApi } from "@/services/slider";
 import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from '@reduxjs/toolkit/query'
-import filterReducer from "./features/filterState/filterSlice";
+
 
 export const store = configureStore({
     reducer: {
-        filters: filterReducer,
+       
         [slidersApi.reducerPath] : slidersApi.reducer,
         [featureApi.reducerPath] : featureApi.reducer,
         [productApi.reducerPath] : productApi.reducer,
