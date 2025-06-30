@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import AddToCartButton from "./addToCart/AddToCartButton";
 
 
 const ProductsList = ({data}) => {
@@ -19,7 +20,7 @@ const ProductsList = ({data}) => {
                             <span>BDT {item.price}</span>
                         </div>
                         <p className="text-xs text-[#89898b]">{item.description}</p>
-                        <Button className='text-[#FCB454] border-[1px] border-[#FCB454] text-sm hover:bg-[#FCB454] hover:text-white'>Add to cart</Button>
+                       <AddToCartButton></AddToCartButton>
                     </div>
                    </Link>
                     ))

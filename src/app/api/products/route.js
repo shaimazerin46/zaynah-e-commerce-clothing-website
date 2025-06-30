@@ -17,11 +17,13 @@ export async function GET(req){
   const sort = url.searchParams.get('sort');
   const minPrice = url.searchParams.get("min");
   const maxPrice = url.searchParams.get('max');
+  const name = url.searchParams.get('searchQuery')
 
   // If category is null, undefined, or 'null' string, treat as no filter
   const category = rawCategory && rawCategory !== "null" ? rawCategory : null;
   const min = minPrice && minPrice !== "null" ? minPrice : null;
   const max = maxPrice && maxPrice !== "null" ? maxPrice : null;
+  const searchQuery  = name && name !== "null" ? name : null;
   
   let filter = {};
   let sortOption = {};
@@ -38,6 +40,12 @@ export async function GET(req){
     filter.price.$lte = Number(max)
   }
 
+ }
+ if(searchQuery){
+   filter.title = { 
+                $regex: searchQuery,
+                $options: 'i'
+            };
  }
  if(sort==='lowToHigh'){
     sortOption.price = 1;

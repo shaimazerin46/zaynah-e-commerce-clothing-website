@@ -8,13 +8,15 @@ import { useSearchParams } from "next/navigation";
 const FetchAllProductList = () => {
     const searchParams = useSearchParams(); //useSearchParams() is a Client Component hook that lets you read the current URL's query string.
    
-    const category = searchParams.get('category')
-    const sort = searchParams.get('sort')
-    const min = searchParams.get('min')
-    const max = searchParams.get('max')
-   
-    
-    const {data, isLoading, isError, error} = useGetProductsQuery({category, sort, min, max});
+  const queryParams = {
+        searchQuery: searchParams.get('searchQuery') || undefined,
+        category: searchParams.get('category') || undefined,
+        sort: searchParams.get('sort') || undefined,
+        min: searchParams.get('min') || undefined,
+        max: searchParams.get('max') || undefined
+    };
+
+    const {data, isLoading, isError, error} = useGetProductsQuery(queryParams);
       if(isLoading){
         return <p>Loading...</p>
     }

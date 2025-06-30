@@ -8,3 +8,6 @@
 .lite_orange{
     background-color: #FCB454;
 }
+html {
+  scroll-behavior: smooth;
+}
