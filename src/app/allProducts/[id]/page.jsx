@@ -38,15 +38,15 @@ const page = ({params}) => {
     setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
 };
     return (
-        <div className="max-w-6xl mx-auto">
-           <div className="grid md:grid-cols-2 grid-cols-1 items-center">
+        <div className="max-w-6xl mx-auto lg:px-0 px-3">
+           <div className="grid md:grid-cols-2 grid-cols-1 md:gap-5 items-center">
             {/* image */}
                 <div>
                     <Image src={data?.img} height={500} width={400} alt={data?.title} className="object-cover"></Image>
                 </div>
                 {/* text */}
-                <div className="space-y-5 ">
-                    <h2 className="text-4xl">{data?.title}</h2>
+                <div className="space-y-5 lg:mt-0 mt-5">
+                    <h2 className="lg:text-4xl md:text-2xl text-xl">{data?.title}</h2>
                     <p className="text-sm text-[#c4c4c6]">{data?.description}</p>
                     <p className="text-xl">{data?.price}BDT</p>
 
