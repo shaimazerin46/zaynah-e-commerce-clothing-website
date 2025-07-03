@@ -42,7 +42,7 @@ const NavIcons = () => {
             existingUser ?
                 <div className="relative">
                 <Avatar onClick={handleClick} className='cursor-pointer relative'>
-                    <AvatarImage src="" />
+                    <AvatarImage src={existingUser.image} />
                     <AvatarFallback className='bg-[#FCB454] text-white' >
                     {existingUser.name.charAt(0)}
                     </AvatarFallback>
@@ -50,9 +50,12 @@ const NavIcons = () => {
                 </Avatar>
 
                 {
-                    isProfileOpen && <div className="flex flex-col absolute p-5 shadow-xl rounded-xl top-10 transform -translate-x-1/2 left-1/2 text-center space-y-3 z-10 bg-white">
-                        <Link href='/'>Profile</Link>
-                        <p>{existingUser?.email}</p>
+                    isProfileOpen && <div className="flex flex-col absolute p-5 shadow-xl rounded-xl top-10 transform -translate-x-1/2 left-1/2 text-center space-y-1 z-10 bg-white border-[1px] border-gray-300">
+                       
+                        <p className="text-sm">{existingUser?.name}</p>
+                        <p className="text-sm text-[#7c7c80]">{existingUser?.email}</p>
+                         <Link href='/'>
+                        <Button className='lite_orange text-white w-full'>Dashboard</Button></Link>
                          <Button onClick={handleLogout} className='btn_style'>Logout</Button>
                         
                     </div>

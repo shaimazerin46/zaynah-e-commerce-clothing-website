@@ -10,6 +10,7 @@ import Link from "next/link";
 import { signIn } from "next-auth/react";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
+import GoogleLogin from "@/components/socialLogin/GoogleLogin";
 
 
 const loginPage = () => {
@@ -67,10 +68,13 @@ const loginPage = () => {
               <Input name="password" type="password" required className='focus:!ring-0'/>
             </div>
           </div>
-          <div className="flex justify-between">
-             <Button type="submit" className="w-full lite_orange text-white mt-5">
+          <div className="flex item-center gap-3">
+             <Button type="submit" className="lite_orange text-white mt-5">
           Login
         </Button>
+      
+         <GoogleLogin></GoogleLogin>
+     
           </div>
         </form>
         <p className="text-xs">Don't have an account?<Link href='/signup' className="text-blue-500">signup</Link></p>
