@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 
 
@@ -31,6 +31,11 @@ const NavIcons = () => {
     const handleLogin = ()=>{
         router.push('/login')
     }
+    const handleLogout = async()=>{
+        await signOut({
+            callbackUrl: '/login',
+        })
+    }
     return (
         <div className="flex justify-between items-center gap-4 md:gap-6 ">
         {
@@ -48,11 +53,12 @@ const NavIcons = () => {
                     isProfileOpen && <div className="flex flex-col absolute p-5 shadow-xl rounded-xl top-10 transform -translate-x-1/2 left-1/2 text-center space-y-3 z-10 bg-white">
                         <Link href='/'>Profile</Link>
                         <p>{existingUser?.email}</p>
-                         <Button className='btn_style'>Logout</Button>
+                         <Button onClick={handleLogout} className='btn_style'>Logout</Button>
                         
                     </div>
                 }
-            </div> :   <Button onClick={handleLogin} className='lite_orange text-white'>Login</Button>
+            </div> 
+            :   <Button onClick={handleLogin} className='lite_orange text-white'>Login</Button>
         }
 
         
