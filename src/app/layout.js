@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import ReduxProvider from '@/providers/ReduxProvider';
 import Footer from '@/components/footer/Footer';
+import { ToastContainer } from 'react-toastify';
+import NextAuthSessionProvider from '@/providers/NextAuthSessionProvider';
 
 
 const poppins = Poppins({
@@ -18,15 +20,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     <ReduxProvider>
+    <NextAuthSessionProvider>
+       <ReduxProvider>
        <body
         className={poppins.className}
       >
         <Navbar></Navbar>
         {children}
         <Footer></Footer>
+        <ToastContainer
+        position="top-center"
+         />
       </body>
      </ReduxProvider>
+    </NextAuthSessionProvider>
     </html>
   );
 }

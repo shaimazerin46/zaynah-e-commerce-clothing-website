@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",
+    "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-select": "^2.2.5",
     "@radix-ui/react-slot": "^1.2.3",
     "@reduxjs/toolkit": "^2.8.2",
@@ -18,11 +19,13 @@
     "lucide-react": "^0.519.0",
     "mongodb": "^6.17.0",
     "next": "15.3.4",
+    "next-auth": "^4.24.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-redux": "^9.2.0",
     "react-slick": "^0.30.3",
+    "react-toastify": "^11.0.5",
     "slick-carousel": "^1.8.1",
     "tailwind-merge": "^3.3.1"
   },
