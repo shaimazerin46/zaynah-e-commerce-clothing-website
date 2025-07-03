@@ -11,6 +11,7 @@ import { signIn } from "next-auth/react";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import GoogleLogin from "@/components/socialLogin/GoogleLogin";
+import GithubLogin from "@/components/socialLogin/GithubLogin";
 
 
 const loginPage = () => {
@@ -74,6 +75,7 @@ const loginPage = () => {
         </Button>
       
          <GoogleLogin></GoogleLogin>
+         <GithubLogin></GithubLogin>
      
           </div>
         </form>
